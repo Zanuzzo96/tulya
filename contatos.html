@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contatos - Túlya B</title>
+	<link rel="shortcut icon" href="assets/img/favicon.png" /> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsividade-md.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsividade-sm.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsividade-xs.css">
+	
+</head>
+<body class="contato">
+
+	 <a href="index.html"><span class="glyphicon glyphicon-arrow-left link-voltar-index" aria-hidden="true"></span></a>
+
+
+	<div class="col-md-12">
+	
+		<div class=" col-md-12 col-lg-12">
+		    <h1 class="contatos-h1 text-center">CONTATOS</h1>
+		</div>
+	</div>
+
+	<div class=" col-sm-12 col-md-12 contatos-midias">
+
+		<div class="col-md-4">
+			<h1 class="text-center col-sm-12"><i class="fab fa-whatsapp fa-2x"></i></h1>
+
+			<a target="_blank" class="btn btn-lg btn-whats col-sm-4 col-sm-offset-4 col-md-10 col-md-offset-1" href="https://api.whatsapp.com/send?1=pt_BR&phone=5548984064456">Entre em Contato </a>
+		</div>
+
+		<div class="col-md-4">
+			<h1 class="text-center col-sm-12"><i class="fab fa-instagram fa-2x"></i></h1>
+
+			<a target="_blank" class="btn btn-lg btn-insta col-sm-4 col-sm-offset-4 col-md-10 col-md-offset-1" href="https://www.instagram.com/tulya_b/">@tulya_b</a>
+		</div>
+
+		<div class=" col-md-4">
+			<h1 class="text-center col-sm-12"><i class="fab fa-facebook-f fa-2x"></i></h1>
+
+			<a target="_blank" class="btn btn-lg btn-face col-sm-4 col-sm-offset-4 col-md-10 col-md-offset-1" href="https://www.facebook.com/estudiotulyaberkelly/">Estúdio Túlya Berkelly</a>
+		</div>
+
+	</div>
+
+	<div class="col-sm-12 col-md-12">
+		<div class="col-md-4 text-center rua"><br>
+			<h1><strong>Visite-nos</strong></h1>
+			<h3>R. Padre Justino Contegens<br><br>N° 20 - Bairro Barreiros<br><br>Anexo ao Salão Daiany Cristiny</h3><br>
+		</div>
+		<div class="col-md-8">
+			<div id="map"></div><br>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+		      function initMap() {
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 18,
+		          center: {lat: -27.566788, lng: -48.616418}
+		        });
+
+		        var image = 'assets/img/iconmaps.png';
+		        var beachMarker = new google.maps.Marker({
+		          position: {lat: -27.566788, lng: -48.616418},
+		          map: map,
+		          icon: image
+		        });
+		      }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMoSd6pLk6kZ5YKRRvtNWCEWrwYCdqkQg&callback=initMap">  </script>
+</body>
+</html>
